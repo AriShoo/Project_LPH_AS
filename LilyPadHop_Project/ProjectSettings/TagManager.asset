@@ -13,6 +13,9 @@ TagManager:
   - UI
   - 
   - 
+  - Buttons
+  - HUD
+  - Animated Sprites
   - 
   - 
   - 
@@ -32,14 +35,14 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Stepping Stones
   - Background Image
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Foreground
+    uniqueID: 1156616443
     locked: 0
   - name: Background Image
     uniqueID: 994437821
