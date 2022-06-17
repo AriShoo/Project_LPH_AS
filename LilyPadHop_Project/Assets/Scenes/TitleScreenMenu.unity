@@ -372,6 +372,7 @@ GameObject:
   - component: {fileID: 308184866}
   - component: {fileID: 308184865}
   - component: {fileID: 308184864}
+  - component: {fileID: 308184867}
   - component: {fileID: 308184863}
   m_Layer: 8
   m_Name: ExitButton
@@ -492,6 +493,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 308184861}
   m_CullTransparentMesh: 0
+--- !u!114 &308184867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308184861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08fb1200f053ecb4fbeab261caab83c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &422099571
 GameObject:
   m_ObjectHideFlags: 0
@@ -504,6 +517,7 @@ GameObject:
   - component: {fileID: 422099575}
   - component: {fileID: 422099574}
   - component: {fileID: 422099573}
+  - component: {fileID: 422099576}
   m_Layer: 0
   m_Name: PlayButton
   m_TagString: Untagged
@@ -572,7 +586,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 422099574}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 422099576}
+        m_MethodName: PlayGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &422099574
@@ -612,6 +637,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 422099571}
   m_CullTransparentMesh: 0
+--- !u!114 &422099576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422099571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cbbe9e70ed30824e9b3b0e894f523ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &640901446
 GameObject:
   m_ObjectHideFlags: 0
