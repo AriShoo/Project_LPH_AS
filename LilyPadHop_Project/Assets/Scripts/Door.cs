@@ -11,7 +11,7 @@ public class Door : MonoBehaviour
         {
             // The thing we ran into had the Player tag
 
-            SceneManager.LoadScene("TileTest");
+            SceneManager.LoadScene("WinScreen");
 
         }
       }
