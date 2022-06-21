@@ -5,12 +5,12 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed = 5;
-    private Rigidbody2D physicsBody = null;
+    private Rigidbody2D ourRigidbody;
 
     // Start is called before the first frame update
     void Start()
     {
-        physicsBody = GetComponent<Rigidbody2D>();
+        ourRigidbody = GetComponent<Rigidbody2D>();
 
         //physicsBody.velocity = new Vector2(2,0);
     }
@@ -30,16 +30,16 @@ public class PlayerMovement : MonoBehaviour
     public void MoveRight()
     {
         // Use the rigidbody, set the velocity to a vector pointing right at magnitude of speed
-        physicsBody.velocity = new Vector2(speed, 0);
+        ourRigidbody.velocity = new Vector2(speed, 0);
     }
     public void MoveLeft()
     {
         // Use the rigidbody, set the velocity to a vector pointing right at magnitude of speed
-        physicsBody.velocity = new Vector2(-speed, 0);
+        ourRigidbody.velocity = new Vector2(-speed, 0);
     }
     public void Jump()
     {
         // Use the rigidbody, set the velocity to a vector pointing right at magnitude of speed
-        physicsBody.velocity = new Vector2(0, speed);
+        ourRigidbody.velocity = new Vector2(0, speed);
     }
 }

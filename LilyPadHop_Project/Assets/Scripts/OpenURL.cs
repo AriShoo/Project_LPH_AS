@@ -1,0 +1,12 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class OpenURL : MonoBehaviour
+{
+    public void ScottishWildlifeTrust()
+    {
+        Application.OpenURL("https://scottishwildlifetrust.org.uk/");
+    }
+
+}

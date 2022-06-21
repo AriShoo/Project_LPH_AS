@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-// NOTE: Make sure your ground has the "Ground" tag (or whatever custom tag you set it to)
-// NOTE: You may need to change your player's Rigidbody settings to Sleeping Mode: Never Sleep
 
 public class PlayerJump : MonoBehaviour
 {
