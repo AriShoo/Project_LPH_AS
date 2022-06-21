@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerJump : MonoBehaviour
+public class JumpButton : MonoBehaviour
 {
    
     public float jumpForce = 1000f;
