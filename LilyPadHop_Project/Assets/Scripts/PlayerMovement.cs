@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed = 5;
+    public float jumpSpeed = 50;
     private Rigidbody2D ourRigidbody;
 
     // Start is called before the first frame update
@@ -37,9 +38,9 @@ public class PlayerMovement : MonoBehaviour
         // Use the rigidbody, set the velocity to a vector pointing right at magnitude of speed
         ourRigidbody.velocity = new Vector2(-speed, 0);
     }
-    public void Jump()
-    {
+   // public void Jump()
+   // {
         // Use the rigidbody, set the velocity to a vector pointing right at magnitude of speed
-        ourRigidbody.velocity = new Vector2(0, speed);
-    }
+       // ourRigidbody.velocity = new Vector2(0, jumpSpeed);
+   // }
 }
