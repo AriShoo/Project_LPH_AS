@@ -37,14 +37,9 @@ public class PlayerMovement : MonoBehaviour
         // Use the rigidbody, set the velocity to a vector pointing right at magnitude of speed
         physicsBody.velocity = new Vector2(-speed, 0);
     }
-    public void MoveUp()
+    public void Jump()
     {
         // Use the rigidbody, set the velocity to a vector pointing right at magnitude of speed
         physicsBody.velocity = new Vector2(0, speed);
-    }
-    public void MoveDown()
-    {
-        // Use the rigidbody, set the velocity to a vector pointing right at magnitude of speed
-        physicsBody.velocity = new Vector2(0, -speed);
     }
 }
