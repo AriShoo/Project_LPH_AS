@@ -17,10 +17,20 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         float axisValY = Input.GetAxis("Vertical"); 
         float axisValX = Input.GetAxis("Horizontal");
+
+        Rigidbody2D ourRigidbody = GetComponent<Rigidbody2D>();
+
+        float currentSpeedH = ourRigidbody.velocity.x;
+        float currentSpeedV = ourRigidbody.velocity.y;
+
+        Animator ourAnimator = GetComponent<Animator>();
+
+        ourAnimator.SetFloat("speedH", currentSpeedH);
+        ourAnimator.SetFloat("speedV", currentSpeedV);
 
         //physicsBody.velocity = new Vector2(axisValX * speed, axisValY * speed);
     }
