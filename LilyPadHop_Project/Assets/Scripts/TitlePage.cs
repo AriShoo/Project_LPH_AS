@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class TitlePage : MonoBehaviour
 {
-    public void PlayGame()
+    public void MainMenu()
     {
         SceneManager.LoadScene("TitleScreenMenu");
     }
