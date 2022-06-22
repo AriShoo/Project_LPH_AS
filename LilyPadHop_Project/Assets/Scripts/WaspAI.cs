@@ -5,26 +5,21 @@ using UnityEngine;
 public class WaspAI : MonoBehaviour
 {
 
-    public float speed = 0.8f;
-    public float range = 3;
+    public float forceStrength;
+    public Vector2 direction;
 
-    float startingX;
-    int dir = 1; 
+    private Rigidbody2D ourRigidbody;
 
-    void Start()
+    void Awake()
     {
-        startingX = transform.position.x;
+
+        ourRigidbody = GetComponent<Rigidbody2D>();
+        direction = direction.normalized;
 
     }
-
-    // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        transform.Translate(Vector2.left * speed * Time.deltaTime * dir);
-        if (transform.position.x < startingX || transform.position.x > startingX + range)
-        {
-            dir *= -1;
-        }
-
+        ourRigidbody.AddForce(direction * forceStrength);
     }
+
 }

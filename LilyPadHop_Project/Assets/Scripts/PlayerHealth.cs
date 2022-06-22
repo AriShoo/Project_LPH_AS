@@ -19,24 +19,15 @@ public class PlayerHealth : MonoBehaviour
     {
         // Destroy will delete/remove a game object from the game
         // "gameObject" is the Game Object that this script is attached to
-        //Destroy(gameObject);
+        Destroy(gameObject);
 
         // Alt: Game over
-        //SceneManager.LoadScene("GameOver");
+        SceneManager.LoadScene("GameOver");
 
         // Alt: Reload current scene
-        string currentScene = SceneManager.GetActiveScene().name;
-        SceneManager.LoadScene(currentScene); 
+        //string currentScene = SceneManager.GetActiveScene().name;
+        //SceneManager.LoadScene(currentScene); 
 
-    }
-
-    public void ChangeHealth(int changeAmount)
-    {
-        currentHealth = currentHealth + changeAmount;
-        if (currentHealth >= 0)
-        {
-            Kill();
-        }
     }
 
 }
